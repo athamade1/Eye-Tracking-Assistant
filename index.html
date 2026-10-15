@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Επικοινωνία</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+    </label>
+    <span>Night Mode</span>
+</div>
+
+<div class="main">
+
+    <button id="sosBtn">SOS</button>
+
+    <div class="content">
+
+        <div class="textbox-row">
+            <textarea id="messageBox"
+                placeholder="Γράψε εδώ..."></textarea>
+
+            <div class="action-buttons">
+                <button id="clearBtn">Καθαρισμός</button>
+                <button id="backspaceBtn">⌫</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<audio id="alarmSound" src="sounds/notification_1.mp3"></audio>
+
+<div class="quick-buttons">
+    <button class="phrase-btn">ΝΑΙ</button>
+    <button class="phrase-btn">ΟΧΙ</button>
+    <button class="phrase-btn">ΝΕΡΟ</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

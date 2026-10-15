@@ -1,0 +1,127 @@
+body{
+    font-family:Arial,sans-serif;
+    margin:20px;
+    background:rgb(229, 229, 229);
+    color:black;
+    transition:0.3s;
+}
+
+.dark{
+    background:#3a3a3a;
+    color:white;
+}
+
+.top-bar{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.main{
+    display:flex;
+    gap:20px;
+}
+
+#sosBtn{
+    width:120px;
+    height:120px;
+    font-size:32px;
+    font-weight:bold;
+    background:#ff4444;
+    color:white;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.content{
+    flex:1;
+}
+
+.textbox-row{
+    display:flex;
+    gap:15px;
+}
+
+#messageBox{
+    flex:1;
+    height:120px;
+    font-size:30px;
+    padding:20px;
+    resize:none;
+    background-color: rgb(215, 215, 215);
+}
+
+#clearBtn{
+    width:100px;
+    height:50px;
+    font-size:16px;
+}
+
+.switch{
+    position:relative;
+    width:60px;
+    height:34px;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:#ccc;
+    border-radius:34px;
+}
+
+.slider::before{
+    content:"";
+    position:absolute;
+    width:26px;
+    height:26px;
+    left:4px;
+    top:4px;
+    background:white;
+    border-radius:50%;
+    transition:0.3s;
+}
+
+input:checked + .slider{
+    background:#2196F3;
+}
+
+input:checked + .slider::before{
+    transform:translateX(26px);
+}
+
+.quick-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.phrase-btn{
+    min-width:140px;
+    height:65px;
+    font-size:26px;
+    font-weight:bold;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+.action-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+#backspaceBtn{
+    width:100px;
+    height:50px;
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+}
